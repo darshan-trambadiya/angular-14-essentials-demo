@@ -1,0 +1,15 @@
+.landing-page {
+  background-image: url('../../../../assets/images/background-image.jpg');
+  background-color: transparent;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
