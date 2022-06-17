@@ -18,7 +18,7 @@ import { PerxDisplayedColumns } from 'src/app/components/shared/perx-table/perx-
 export class TableResultComponent implements OnInit {
   public displayedColumns: PerxDisplayedColumns[] = [
     { name: 'ID', value: 'id' },
-    { name: 'Content', value: 'attributes.content' },
+    { name: 'Content', value: 'contentName' },
     {
       name: 'Image',
       value: 'attributes.display_properties.image',
@@ -45,9 +45,13 @@ export class TableResultComponent implements OnInit {
 
         const finalResult = lmap(response?.data, (r) => {
           const createdAtDate = get(r, createdAtPath);
-          if (createdAtDate) {
+
+          createdAtDate &&
             set(r, createdAtPath, moment(createdAtDate).format('MM-DD-YYYY'));
-          }
+
+          const contentName = get(r, 'attributes.content');
+          contentName && set(r, 'contentName', contentName);
+
           return r;
         });
 

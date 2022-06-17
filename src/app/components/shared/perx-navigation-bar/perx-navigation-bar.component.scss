@@ -1,3 +1,5 @@
+@import '../../../../assets/styles/variables.scss';
+
 .perx-navigation-bar {
   &__logo-container {
     display: flex;
@@ -8,6 +10,12 @@
     img {
       height: 40px;
       width: 100px;
+    }
+  }
+
+  .mat-nav-list {
+    .active-nav-link {
+      background-color: $active-nav-link;
     }
   }
 }

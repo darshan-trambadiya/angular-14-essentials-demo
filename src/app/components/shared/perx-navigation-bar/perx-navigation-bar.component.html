@@ -1,5 +1,5 @@
 <div class="perx-navigation-bar">
-  <mat-nav-list>
+  <mat-nav-list @listItemAnimation>
     <div
       class="perx-navigation-bar__logo-container"
       [routerLink]="['/']"
@@ -16,6 +16,7 @@
       *ngFor="let item of navLinks"
       mat-list-item
       [routerLink]="item.link"
+      routerLinkActive="active-nav-link"
     >
       {{item.label}}
     </a>

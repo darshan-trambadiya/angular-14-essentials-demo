@@ -7,6 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PerxLoaderComponent implements OnInit {
   @Input() type: 'table' = 'table';
+  @Input() strokeWidth: number = 6;
+  @Input() diameter: number = 60;
+
   public loaderClass!: string;
 
   ngOnInit() {
