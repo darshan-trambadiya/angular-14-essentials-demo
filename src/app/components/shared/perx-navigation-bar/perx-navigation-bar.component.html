@@ -1,1 +1,23 @@
-<p>perx-navigation-bar works!</p>
+<div class="perx-navigation-bar">
+  <mat-nav-list>
+    <div
+      class="perx-navigation-bar__logo-container"
+      [routerLink]="['/']"
+    >
+      <img
+        src="../../../../assets/images/logo.svg"
+        alt="Logo"
+      />
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <a
+      *ngFor="let item of navLinks"
+      mat-list-item
+      [routerLink]="item.link"
+    >
+      {{item.label}}
+    </a>
+  </mat-nav-list>
+</div>

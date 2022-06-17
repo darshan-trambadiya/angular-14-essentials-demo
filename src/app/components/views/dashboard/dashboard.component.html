@@ -1,3 +1,12 @@
-<perx-navigation-bar></perx-navigation-bar>
-<router-outlet></router-outlet>
-<p>dashboard works!</p>
+<mat-drawer-container class="dashboard-drawer-container">
+  <mat-drawer
+    mode="side"
+    opened
+  >
+    <perx-navigation-bar></perx-navigation-bar>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

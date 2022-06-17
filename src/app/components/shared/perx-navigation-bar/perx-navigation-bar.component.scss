@@ -1,0 +1,13 @@
+.perx-navigation-bar {
+  &__logo-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+    cursor: pointer;
+
+    img {
+      height: 40px;
+      width: 100px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.directive-result {
+  &__radio-button-container,
+  &__textarea-container,
+  &__div-result-container {
+    padding-bottom: 46px;
+
+    .mat-radio-group {
+      .mat-radio-button:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
+
+    .mat-form-field {
+      margin-right: 12px;
+      width: 50%;
+    }
+  }
+}

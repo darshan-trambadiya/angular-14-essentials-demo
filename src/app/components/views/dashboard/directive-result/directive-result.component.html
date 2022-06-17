@@ -1,0 +1,58 @@
+<div class="directive-result">
+
+  <div class="directive-result__radio-button-container">
+    <mat-radio-group
+      aria-label="Select an option"
+      color="primary"
+      [(ngModel)]="isOnFly"
+    >
+      <mat-radio-button [value]="true">On Fly</mat-radio-button>
+      <mat-radio-button [value]="false">On Submit</mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <div class="directive-result__textarea-container">
+    <mat-form-field appearance="fill">
+      <mat-label>Input your custom text here...</mat-label>
+      <textarea
+        matInput
+        cdkTextareaAutosize
+        #autosize="cdkTextareaAutosize"
+        cdkAutosizeMinRows="3"
+        cdkAutosizeMaxRows="7"
+        [(ngModel)]="textareaValue"
+        (input)="onTextareaInputChanged()"
+      ></textarea>
+    </mat-form-field>
+
+    <perx-button
+      *ngIf="!isOnFly"
+      text="Submit"
+      (onClicked)="onSubmit()"
+    ></perx-button>
+  </div>
+
+  <div class="directive-result__div-result-container">
+    <mat-card class="example-card">
+      <mat-card-title-group>
+        <mat-card-title>Output: styled div of default text</mat-card-title>
+      </mat-card-title-group>
+      <mat-card-content>
+        <div
+          perxContentModifier
+          [content]="textarea$ | async"
+        >
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make
+          a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+          containing
+          Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+          versions
+          of Lorem Ipsum.
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

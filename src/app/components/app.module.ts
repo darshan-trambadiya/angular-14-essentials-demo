@@ -2,6 +2,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 // modules
 import { PerxButtonModule } from './shared/perx-button/perx-button.module';
@@ -16,6 +17,7 @@ import { LandingPageComponent } from './views/landing-page/landing-page.componen
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     PerxButtonModule,
     AppRoutingModule,
   ],
