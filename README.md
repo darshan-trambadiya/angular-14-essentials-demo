@@ -1,27 +1,52 @@
-# PerxAngularInterviewExam
+# Angular 14 Essentials Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
+This is an Angular 14 application that demonstrates the core features of Angular, including Routing, Directives, Pipes, and Services, with UI components built using Angular Material.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Routing**: Implements navigation between different views.
+- **Directives**: Showcases built-in and custom directives.
+- **Pipes**: Demonstrates built-in and custom pipes for data transformation.
+- **Services**: Uses dependency injection to manage application data.
+- **Angular Material**: Provides a modern UI with Material Design components.
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
 
-## Build
+- **Node.js** (Version 14.15.0 or later, recommended: 16.x)
+- **Angular CLI** (Version 14.x)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Steps
 
-## Running unit tests
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/darshan-trambadiya/angular-14-essentials-demo.git
+   cd angular-14-essentials-demo
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Run the application:
+   ```sh
+   ng serve
+   ```
+4. Open your browser and navigate to:
+   ```
+   http://localhost:4200
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Custom Features
 
-## Running end-to-end tests
+- **Custom Directives**: Implements attribute directives.
+- **Custom Pipes**: Includes text formatting and transformation pipes.
+- **Reusable Services**: Uses services to fetch and manage data.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Contributing
 
-## Further help
+Feel free to fork and contribute by creating a pull request.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+
+This project is licensed under the MIT License.
