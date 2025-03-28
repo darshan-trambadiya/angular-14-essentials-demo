@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "PerxAngularInterviewExam": {
+    "Angular14EssentialsDemo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/perx-angular-interview-exam",
+            "outputPath": "dist/angular-14-essentials-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "PerxAngularInterviewExam:build:production"
+              "browserTarget": "Angular14EssentialsDemo:build:production"
             },
             "development": {
-              "browserTarget": "PerxAngularInterviewExam:build:development"
+              "browserTarget": "Angular14EssentialsDemo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "PerxAngularInterviewExam:build"
+            "browserTarget": "Angular14EssentialsDemo:build"
           }
         },
         "test": {
